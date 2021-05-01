@@ -1,19 +1,19 @@
-# @ev-fns/exec
+# @ev-fns/spawn
 
-Async exec that outputs to stdout
+Async spawn that outputs to stdout
 
-- exec `(cmd: string) => Promise<void>`
+- spawn `(cmd: string) => Promise<void>`
 
 ## Install
 
 ```sh
-yarn add @ev-fns/exec
+yarn add @ev-fns/spawn
 ```
 
 ## Usage
 
 ```js
-const { exec } = require("@ev-fns/exec");
+const { spawn } = require("@ev-fns/spawn");
 
-exec("Hello World 👋 && sleep 1").then(() => console.log("Finished"));
+spawn("Hello World 👋 && sleep 1").then(() => console.log("Finished"));
 ```
